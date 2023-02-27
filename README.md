@@ -9,7 +9,7 @@
 **Let's connect**
 
 [![gmail](https://img.shields.io/badge/gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)][email]
-[![Linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin)][linkedin]
+[![linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin)][linkedin]
 [![blog](https://img.shields.io/badge/blog-000000?style=for-the-badge&logo=vercel&logoColor=white)][website]
 
 [website]: https://raulduke.com/
