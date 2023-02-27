@@ -1,7 +1,7 @@
 
 [![raulduke.com](https://media.giphy.com/media/10RVT8mge0xQwU/giphy.gif)](https://raulduke.com)
 
-#### Hi, my name is Richard (Rick) Álvarez 👋🏽
+#### Hi, my name is Rick Álvarez 👋🏽
 
 🎓  Kenyon College <br/>
 ⭐️  Interests: Film, software, and web development 
