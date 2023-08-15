@@ -7,3 +7,6 @@
   <br />
   <img src="https://media.giphy.com/media/10RVT8mge0xQwU/giphy.gif"></img>
 </div>
+
+[![Resume](https://github.com/raulduk3/raulduk3/blob/main/Richard_Alvarez_Resume.jpg?raw=true)](https://www.raulduke.com/)
+
