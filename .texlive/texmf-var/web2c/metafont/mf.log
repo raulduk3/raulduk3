@@ -1,0 +1,21 @@
+This is METAFONT, Version 2.71828182 (INIMF)  15 AUG 2023 13:43
+(/usr/share/texmf-dist/web2c/cp227.tcx)
+**mf.ini
+(/usr/share/texmf-dist/metafont/config/mf.ini
+(/usr/share/texmf-dist/metafont/base/plain.mf
+Preloading the plain base, version 2.71: preliminaries,
+ basic constants and mathematical macros,
+ macros for converting from device-independent units to pixels,
+ macros and tables for various modes of operation,
+ macros for drawing and filling,
+ macros for proof labels and rules,
+ macros for character and font administration,
+and a few last-minute items.)
+(/usr/share/texmf-dist/fonts/source/public/modes/modes.mf) )
+Beginning to dump on file mf.base
+ (preloaded base=mf 2023.8.15)
+2237 strings of total length 30163
+11955 memory locations dumped; current usage is 3679&7916
+1011 symbolic tokens
+# actual command line used during this run
+# mf-nowin -ini   -jobname=mf -progname=mf -translate-file=cp227.tcx mf.ini >&2 </dev/null

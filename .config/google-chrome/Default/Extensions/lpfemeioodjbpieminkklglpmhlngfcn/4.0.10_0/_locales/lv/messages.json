@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Papildiniet savus ChatGPT pamudinājumus ar attiecīgiem tīmekļa meklēšanas rezultātiem, izmantojot tīmekļa pārlūkošanu."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT ar piekļuvi internetam"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Pārslēgt tīmekļa piekļuvi"
+   }
+}

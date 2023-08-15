@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Расширьте свои подсказки ChatGPT с помощью актуальных результатов веб-поиска через веб-просмотр."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT с доступом в интернет"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Переключить доступ к вебу"
+   }
+}

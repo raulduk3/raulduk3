@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "通过网络浏览增强您的ChatGPT提示与相关的网络搜索结果。"
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT 具备互联网访问功能"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "切换网页访问"
+   }
+}

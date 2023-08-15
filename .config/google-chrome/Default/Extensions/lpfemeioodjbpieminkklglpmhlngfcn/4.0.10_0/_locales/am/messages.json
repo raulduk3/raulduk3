@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "ከወቅታዊ ድረገጽ ጋር መግለጫ ያለውን የድረገጽ GPT-3.5 ቅርጸት ከዋርት ያለውን የድረገጽ ፍላጎት ለመጨረስ ይፈታል።"
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT የኢንተርኔት አካውንት ይሁኑ"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "የዌብ አሳይ"
+   }
+}

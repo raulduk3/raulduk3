@@ -1,0 +1,24 @@
+{
+   "action": {
+      "default_icon": {
+         "128": "images/icons/icon128.png",
+         "19": "images/icons/icon19.png",
+         "48": "images/icons/icon48.png"
+      }
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "description": "This simple app allows you to create modify and delete horizontal and vertical guides to check if the elements are correctly aligned",
+   "homepage_url": "https://github.com/StefanoVollono/guides",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuP28zmiDm0UOa/jFwHNtAU22S2T+wLH5LhaFNgahQ7/ldF6YByFc6hvbeyWuhMWGpTbdQJm/Jf+WrzvriuIr+s9JJ3NEDAOKSG9ZbCrn+URQViOhWYF/u8QIo7aJfBEvMsGU7gzySkqnTbCM9wD2+hMgNi6ttVTQfiIyM4Cp2jbp10BHzJrX1VKrtXvXWRxbn23qc8rhR6HkNEe/bB56DENEtNW0ySH2oXWeFuWul0HfvZUvH4khPIWn6aDuPMDDWjOe7WkJaMqsyZb7rxX0W0YWrW7fwgndDjR3E+Nz0HAll0oD7A0VvaNU41soDSDZ0/va6H4TAz5o1Vf7flK6aQIDAQAB",
+   "manifest_version": 3,
+   "name": "Guides",
+   "permissions": [ "activeTab", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.1",
+   "web_accessible_resources": [ {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "images/hruler.png", "images/vruler.png" ]
+   } ]
+}

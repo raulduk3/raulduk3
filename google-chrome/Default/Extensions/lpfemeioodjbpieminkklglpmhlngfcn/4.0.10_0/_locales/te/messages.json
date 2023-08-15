@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "వెబ్ వేచి చేసి సంబంధిత వెబ్ శోధన ఫలితాలతో ChatGPT ప్రాంప్ట్‌లను వర్ధించండి."
+   },
+   "name": {
+      "message": "WebChatGPT: ఇంటర్నెట్ యాక్సెస్‌తో ChatGPT"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "వెబ్ యాక్సెస్ టాగిల్ చేయండి"
+   }
+}

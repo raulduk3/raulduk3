@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/ra/Downloads/preview.png" added="2023-08-15T01:41:37.461641Z" modified="2023-08-15T01:42:14.516854Z" visited="2023-08-15T01:41:37.461643Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:applications>
+          <bookmark:application name="google-chrome" exec="&apos;google-chrome %u&apos;" modified="2023-08-15T01:42:14.516849Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ra/cv+resume/richardalvarez-CV/main.tex" added="2023-08-15T17:53:43.027837Z" modified="2023-08-15T18:31:55.946436Z" visited="2023-08-15T17:53:43.027838Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-tex"/>
+        <bookmark:applications>
+          <bookmark:application name="gummi" exec="&apos;gummi %u&apos;" modified="2023-08-15T18:31:55.946435Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ra/ra-general" added="2023-08-15T18:47:54.622091Z" modified="2023-08-15T18:47:54.622100Z" visited="2023-08-15T18:47:54.622092Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="electron" exec="&apos;electron %u&apos;" modified="2023-08-15T18:47:54.622095Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

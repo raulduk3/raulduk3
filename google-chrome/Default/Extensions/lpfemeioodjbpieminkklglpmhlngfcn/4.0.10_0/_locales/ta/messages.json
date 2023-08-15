@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "வலை அலுவலரின் உதவிகளுடன் உங்கள் ChatGPT விரும்புகைகளை விளக்குகிறது."
+   },
+   "name": {
+      "message": "WebChatGPT: இணைய அணுகலுடன் சாட்ஜிபிடி"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "வலையமைப்பை மாற்று"
+   }
+}

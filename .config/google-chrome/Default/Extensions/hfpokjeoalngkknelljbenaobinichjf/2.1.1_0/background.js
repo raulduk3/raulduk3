@@ -1,0 +1,1 @@
+chrome.action.onClicked.addListener((e=>{chrome.scripting.insertCSS({target:{tabId:e.id},files:["guides.css"]}),chrome.scripting.executeScript({target:{tabId:e.id},files:["guides.js"]})}));

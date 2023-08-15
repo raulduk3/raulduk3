@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Îmbunătățiți prompturile dvs. ChatGPT cu rezultate relevante de căutare web prin navigarea pe web."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT cu acces la internet"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Comutare acces web"
+   }
+}

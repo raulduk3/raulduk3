@@ -1,0 +1,164 @@
+{
+   "appConnector": {
+      "message": "$1 Bağlayıcısı"
+   },
+   "copyUnproxiedLink": {
+      "message": "Vekillenmemiş Bağlantıyı Kopyala"
+   },
+   "copyUnproxiedPageURL": {
+      "message": "Vekillenmemiş Sayfa URL'sini Kopyala"
+   },
+   "error_connection_downloadOrTroubleshoot": {
+      "message": "\u003Ca href=\"$1\">$2 programını indirebilir\u003C/a> ya da gerekirse \u003Ca href=\"$3\">bağlantı sorununu gidermeyi\u003C/a> deneyebilirsiniz."
+   },
+   "error_connection_enableSavingToOnlineLibrary": {
+      "message": "Çevrimiçi Kitaplığa Kaydetmeyi Etkinleştir"
+   },
+   "error_connection_isAppRunning": {
+      "message": "$1 Çalışıyor mu?"
+   },
+   "error_connection_save": {
+      "message": "$1, $2 masaüstü uygulamasıyla iletişim kuramamaktadır. Bağlayıcı, bazı sayfaları $3 hesabınıza direk olarak kaydedebilmektedir, ancak en iyi sonuçları alabilmek için kaydetmeyi denemeden önce $2 programının açık olduğuna emin olunuz."
+   },
+   "extensionIsDisabled": {
+      "message": "$1 devre dışı"
+   },
+   "extensionIsDisabled_extensionPage": {
+      "message": "$1, Uzantılar sayfasında devre dışı"
+   },
+   "firstRun_acceptButton": {
+      "message": "Tamam"
+   },
+   "firstRun_text1": {
+      "message": "$1 Bağlayıcısı, tarayıcınızda tek bir tıklama ile \u003Ca href=\"$2\">eserleri $1 içinde kaydetmenizi\u003C/a> sağlar."
+   },
+   "firstRun_text2": {
+      "message": "Eğer hala yapmadıysanız, en iyi deneyim için $1 uygulamasını \u003Ca href=\"$2\">indiriniz\u003C/a>."
+   },
+   "firstRun_title": {
+      "message": "$1 Bağlayıcısını Kurdunuz!"
+   },
+   "general_cancel": {
+      "message": "İptal Et"
+   },
+   "general_copyToClipboard": {
+      "message": "Panoya Kopyala"
+   },
+   "general_done": {
+      "message": "Tamam"
+   },
+   "general_more": {
+      "message": "Daha Başka..."
+   },
+   "general_moreInfo": {
+      "message": "Daha Fazla Bilgi..."
+   },
+   "general_needHelp": {
+      "message": "Yardıma ihtiyacınız var mı?"
+   },
+   "general_no": {
+      "message": "Hayır"
+   },
+   "general_pleaseWait": {
+      "message": "Lütfen bekleyin..."
+   },
+   "general_saveTo": {
+      "message": "$1'ya Kaydet"
+   },
+   "general_tryAgain": {
+      "message": "Yeniden Dene"
+   },
+   "general_warning": {
+      "message": "Uyarı"
+   },
+   "general_yes": {
+      "message": "Evet"
+   },
+   "integration_error_clientUpgrade": {
+      "message": "Web bazlı alıntı yapmak için $1 veya yenisi gerekmektedir."
+   },
+   "integration_error_connection": {
+      "message": "$1, $2 masaüstü uygulamasıyla iletişim kuramamaktadır. Web bazlı alıntı yapabilmek için $2 açık olmalıdır."
+   },
+   "integration_googleDocs_documentLocked": {
+      "message": "Bu belgenin alıntıları başka bir $1 kullanıcısı tarafından düzenlenmektedir. Lütfen daha sonra tekrar deneyin."
+   },
+   "integration_googleDocs_documentLocked_moreInfo": {
+      "message": "$1, birçok kullanıcının aynı anda alıntıları düzenlemesini engellemek için belgeyi kilitlemektedir. Eşzamanlı alıntı düzenlemeler alıntı veya belge bozulmasına neden olabilir. Ağ arızaları gibi bazı öngörülemeyen durumlar, belgenizin kalıcı olarak kilitlenmesine neden olabilir. Eğer bunun olduğuna inanıyorsanız, kilidi geçersiz kılabilirsiniz.\u003Cbr/>\u003Cbr/>Belgedeki kilidi geçersiz kılmak ister misiniz?"
+   },
+   "integration_googleDocs_documentPermissionError": {
+      "message": "Seçtiğiniz Google hesabının bu belgeyi düzenleme izni yok. Lütfen tekrar deneyin ve düzenleme erişimi olan hesabı seçtiğinizden emin olun."
+   },
+   "integration_googleDocs_docxAlert": {
+      "message": "$1 ile birleştirme, Microsoft Word .docx dosyalarını Google Docs içinde düzenlerken kullanılamamaktadır. Dosya Seçiniz → Google Docs dosyası olarak kaydediniz seçenekleri ile bu fonksiyonu etkinleştirebilirsiniz.\u003Cbr/>\u003Cbr/> $1 alıntısı içeren bir Word belgesini Google Docs uygulamasına aktarmak için, \u003Ca href=\"https://www.zotero.org/support/kb/moving_documents_between_word_processors\">Moving Documents Between Word Processors\u003C/a> sayfasına bakınız."
+   },
+   "integration_googleDocs_orphanedCitations_alert": {
+      "message": "Düzenlemeye çalıştığınız alıntı $1 ile olan bağlantısını kaybetmiş."
+   },
+   "integration_googleDocs_orphanedCitations_alertButton": {
+      "message": "Alıntının Bağlantısını Yeniden Kur"
+   },
+   "integration_googleDocs_orphanedCitations_buttonTooltip": {
+      "message": "Bağlantılarını kaybetmiş $1 alıntılarını göster"
+   },
+   "integration_googleDocs_orphanedCitations_disclaimer": {
+      "message": "Bu alıntılar \u003Ca target=\"_blank\" href=\"https://www.zotero.org/support/kb/google_docs_citations_unlinked\">$1 ile olan bağlantılarını kaybetmiş\u003C/a>. Kaynakçanızda güncellenmeleri ya da görünebilmeleri için yeniden bağlantılarını kurmanız gerekmektedir."
+   },
+   "integration_googleDocs_unlinkBeforeSaving_downloadAnyway": {
+      "message": "Yine de Bağlantılı Versiyonu İndir"
+   },
+   "integration_googleDocs_unlinkBeforeSaving_instructions": {
+      "message": "Paylaşılmaya uygun bir versiyon üretmek için, önce \u003Cb>Kopya yarat...\u003C/b>seçeneğini, sonra da \u003Cb>Alıntıları Bağlantısızlaştır\u003C/b> seçeneğini seçiniz ve sonra bağlantısızlaştırılmış versiyonu indiriniz. Belgenizin bağlantıları içeren asıl versiyonunu, gelecekte değişiklikler yapabilmek için tutunuz."
+   },
+   "integration_googleDocs_unlinkBeforeSaving_warning": {
+      "message": "Bu belge aktif Zotero alıntıları içermektedir ve bu alıntılar belgenin indirilmiş kopyalarında zotero.org bağlantıları olarak görüneceklerdir."
+   },
+   "integration_googleDocs_updating": {
+      "message": "$1 belgenizi güncelliyor."
+   },
+   "progressWindow_error_fallback": {
+      "message": "$1 çevirmenini kullanarak kaydetme işlemi sırasında bir hata oldu. $2 kullanılarak kaydetme deneniyor."
+   },
+   "progressWindow_error_siteAccessLimits": {
+      "message": "Siteye Erişim Sınırlamaları"
+   },
+   "progressWindow_error_siteAccessLimitsError": {
+      "message": "Bu eseri kaydederken bir hata oldu. $1, aynı anda kaydedilen eser sayısını kısıtlamakta olabilir. Daha çok bilgi için buraya bakınız: $2 "
+   },
+   "progressWindow_error_translation": {
+      "message": "Bu eseri kaydederken bir hata meydana geldi. Daha fazla bilgi için $1'ye bakınız."
+   },
+   "progressWindow_error_troubleshootingTranslatorIssues": {
+      "message": "Çevirmen Sorunlarını Giderme"
+   },
+   "progressWindow_error_upgradeClient": {
+      "message": "Bu özellik, $1'nin sizdeki sürümü tarafından desteklenmemektedir. Lütfen $2 yükseltiniz."
+   },
+   "progressWindow_error_upgradeClient_latestVersion": {
+      "message": "son sürüme"
+   },
+   "progressWindow_savingTo": {
+      "message": "Buraya Kaydediyor"
+   },
+   "progressWindow_tagPlaceholder": {
+      "message": "Etiketler (virgüllerle ayrılmış)"
+   },
+   "reloadVia": {
+      "message": "$1 ile Yeniden Yükle"
+   },
+   "reloadViaProxy": {
+      "message": "Vekil ile Yeniden Yükle"
+   },
+   "reports_debug_output_submitted": {
+      "message": "Hata ayıklama çıktınız gönderildi.\n\nHata Ayıklama Kimlik Numarası: $1."
+   },
+   "reports_report_submitted": {
+      "message": "Hata raporunuz teslim edildi.\n\nRapor Kimlik Numarası: $1\n\nLütfen Zotero forumlarına bir ileti bırakınız ve bu iletide Rapor Kimlik Numarasını, sorunun bir tanımını ve bu sorunu yeniden oluşturabilmek için yapılanları adım adım yazınız.\n\nHata raporları forumlarda bildirilmezlerse incelenmeyeceklerdir."
+   },
+   "reports_submission_failed": {
+      "message": "Raporunuz gönderilirken bir hata oluştu.\n\n$1\n\nLütfen internet bağlantınızı kontrol ediniz. Eğer sorununuz devam ederse Zotero forumlarına bir ileti bırakınız."
+   },
+   "upgradeApp": {
+      "message": "$1 Programını Yükselt"
+   }
+}

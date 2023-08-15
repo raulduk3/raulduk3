@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Web gezinme yoluyla ilgili web arama sonuçlarıyla ChatGPT ipuçlarınızı geliştirin."
+   },
+   "name": {
+      "message": "WebChatGPT: İnternet erişimli ChatGPT"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Web Erişimini Değiştir"
+   }
+}

@@ -1,0 +1,14 @@
+{
+   "author": "Tim & Claudio",
+   "chrome_url_overrides": {
+      "newtab": "index.html"
+   },
+   "description": "Bringing awesome colors and fonts to the new tab page! A little bit of something fresh every time you hit that new tab button.",
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuaj4RkBGnf61GSPmDETBo9/mNB36V3ruHWyTe03nuDV1cbs+UPB/8PiPNnpgqQPXH/a14TC3qNLEoTyOly3RBlARkGdzqi9Pnxl5xzucowo7j0Kb2rxtc6WqW9whjYRkkuJziboPG1Cg9KDe9RX0PNpvI7KjIlaOCiqoxvcfyA7E+IEfP/agT9x1K2hxrqwl1VwvsgtuZoJABBO1CHzJITrNZyu4Wx63hgVjJP1QsvF+7jKLxdmN4HRbFMuFjAoScx7kvViDPSnIhmLmetLhrMGwQjeqM/x16g2mlsVBfv+aA//1FgpJD/6X4eYuAO7UN1oZZREP+/VaD9Q7ZAk5jwIDAQAB",
+   "manifest_version": 2,
+   "name": "Palettab",
+   "permissions": [ "clipboardWrite" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.6"
+}

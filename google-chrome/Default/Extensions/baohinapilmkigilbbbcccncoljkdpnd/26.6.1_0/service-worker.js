@@ -1,0 +1,1 @@
+"use strict";!function(){self;var s=["/scripts/shared-all.js","/scripts/cj-landing.js","/scripts/cjg-shortcuts.js","/scripts/shared-background-options.js","/scripts/background.js"];if("undefined"!=typeof importScripts)try{importScripts.apply(void 0,s)}catch(s){}else for(var t=0;t<s.length;t++){var r=document.createElement("script");r.src=s[t],document.body.appendChild(r)}}();

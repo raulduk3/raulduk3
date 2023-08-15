@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "قم بتعزيز برومبتات ChatGPT الخاصة بك بنتائج بحث ويب ذات صلة من خلال التصفح على الويب."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT بإمكانه الوصول إلى الإنترنت"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "تبديل الوصول إلى الويب"
+   }
+}

@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Aprimore suas sugestões do ChatGPT com resultados relevantes de pesquisa na web por meio de navegação na web."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT com acesso à internet"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Alternar Acesso à Web"
+   }
+}

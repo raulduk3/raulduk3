@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "वेब ब्राउझिंग द्वारे अपन्यासंबंधित वेब शोधण्याचे परिणाम वाढवा."
+   },
+   "name": {
+      "message": "WebChatGPT: इंटरनेटवर चॅटजीपीटीसह"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "वेब प्रवेश टॉगल करा"
+   }
+}

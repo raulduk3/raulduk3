@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Mở rộng lời nhắc ChatGPT của bạn với kết quả tìm kiếm web liên quan thông qua duyệt web."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT có khả năng truy cập internet"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Chuyển đổi Truy cập Web"
+   }
+}

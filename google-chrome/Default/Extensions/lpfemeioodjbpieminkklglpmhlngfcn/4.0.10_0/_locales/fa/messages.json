@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "دستور العمل ChatGPT خود را با نتایج مرتبط جستجوی وب از طریق مرور وب ارتقا دهید."
+   },
+   "name": {
+      "message": "WebChatGPT: چت‌جی‌پی‌تی با دسترسی به اینترنت"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "تغییر دسترسی وب"
+   }
+}

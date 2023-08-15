@@ -1,0 +1,67 @@
+{
+   "action": {
+   },
+   "background": {
+      "service_worker": "background/bg.js",
+      "type": "module"
+   },
+   "commands": {
+      "toggle-web-access": {
+         "description": "__MSG_toggleWebAccess__",
+         "suggested_key": {
+            "default": "Alt+W"
+         }
+      }
+   },
+   "content_scripts": [ {
+      "js": [ "import_mainUI.js" ],
+      "matches": [ "https://chat.openai.com/*" ]
+   }, {
+      "js": [ "import_authClient.js" ],
+      "matches": [ "https://app.maxai.me/*" ]
+   }, {
+      "js": [ "import_theSearchItem.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   }, {
+      "js": [ "import_AI4Search.js" ],
+      "matches": [ "\u003Call_urls>" ]
+   } ],
+   "default_locale": "en",
+   "description": "__MSG_desc__",
+   "host_permissions": [ "*://*/*" ],
+   "icons": {
+      "128": "assets/icons/icon128.png",
+      "16": "assets/icons/icon16.png",
+      "48": "assets/icons/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq+aUS/mNZ3R1yBj5V1RFXH9ydkgiYIlJSdWAYYQQrSU13E9WxrDYgtkT7Lvd/ALpBq1QUaQ7n/tJc30Ibc/23eJsOT+ZKn9Sueo38G6wM0vOiT6KraXtAWsmT+FNAaCpp0Jzhwjc7v3ROUEYTDMsBvJUoT3zTesrQLBo8QEiWmdfqovYU1K8S0PmgIitI9MfL/f6iQaC98BWnLpejxScOywuClZj4tcwWC+ai9zBgkVF5ZXKkuPP3I8VY1/58QPPedxm5ZMJpMv0oh+PfiALxQlRps8YzGGMJblW1ZM3msrp3jTLH5an4b9VeCvvboxzI84bJuBdZjv4DwMXInYt5QIDAQAB",
+   "manifest_version": 3,
+   "name": "__MSG_name__",
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options/options.html"
+   },
+   "permissions": [ "storage" ],
+   "short_name": "__MSG_sn__",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "4.0.10",
+   "web_accessible_resources": [ {
+      "matches": [ "https://chat.openai.com/*" ],
+      "resources": [ "mainUI.css", "assets/icons/icon48.png" ]
+   }, {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "chunks/*.js", "i18n/locales/*", "AI4Search.css", "assets/images/*" ]
+   }, {
+      "matches": [ "https://chat.openai.com/*" ],
+      "resources": [ "mainUI.js" ]
+   }, {
+      "matches": [ "https://app.maxai.me/*" ],
+      "resources": [ "authClient.js" ]
+   }, {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "theSearchItem.js" ]
+   }, {
+      "matches": [ "\u003Call_urls>" ],
+      "resources": [ "AI4Search.js" ]
+   } ]
+}

@@ -1,0 +1,6 @@
+2023/08/14-23:48:51.058 7dd Reusing MANIFEST /home/ra/.config/google-chrome/Default/Sync Data/LevelDB/MANIFEST-000001
+2023/08/14-23:48:51.058 7dd Recovering log #3
+2023/08/14-23:48:51.058 7dd Reusing old log /home/ra/.config/google-chrome/Default/Sync Data/LevelDB/000003.log 
+2023/08/15-13:24:47.911 7d3 Level-0 table #5: started
+2023/08/15-13:24:47.916 7d3 Level-0 table #5: 144540 bytes OK
+2023/08/15-13:24:47.917 7d3 Delete type=0 #3

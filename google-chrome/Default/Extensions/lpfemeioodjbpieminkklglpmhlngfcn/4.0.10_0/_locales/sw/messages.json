@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Boresha maagizo yako ya ChatGPT na matokeo ya kutafuta wavuti yanayofaa kupitia kivinjari cha wavuti."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT na ufikiaji wa mtandao"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Badilisha Upatikanaji wa Wavuti"
+   }
+}

@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Bővítse ChatGPT promptjait releváns webes keresési eredményekkel böngészés segítségével."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT internet-hozzáféréssel"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Webhelyhozzáférés váltása"
+   }
+}

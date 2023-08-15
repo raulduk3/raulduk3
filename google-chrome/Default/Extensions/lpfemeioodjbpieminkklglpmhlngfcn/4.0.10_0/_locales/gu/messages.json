@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "વેબ બ્રાઉઝિંગ દ્વારા સંબંધિત વેબ શોધ પરિણામો સાથે તમારા ChatGPT પ્રોંપ્ટને વધારો."
+   },
+   "name": {
+      "message": "WebChatGPT: ઇન્ટરનેટ એક્સેસ સાથે ChatGPT"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "વેબ ઍક્સેસ ટૉગલ કરો"
+   }
+}

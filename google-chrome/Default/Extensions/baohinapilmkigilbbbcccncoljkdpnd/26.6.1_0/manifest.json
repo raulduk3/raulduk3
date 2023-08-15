@@ -1,0 +1,72 @@
+{
+   "author": "Carlos Jeurissen",
+   "background": {
+      "page": "/views/background.html",
+      "persistent": false
+   },
+   "browser_action": {
+      "browser_style": false,
+      "default_area": "navbar",
+      "default_icon": {
+         "16": "/images/action/default/default-16.png",
+         "19": "/images/action/default/default-19.png",
+         "32": "/images/action/default/default-32.png",
+         "38": "/images/action/default/default-38.png"
+      },
+      "default_popup": "/views/app.html",
+      "default_title": "Shortcuts for Google™"
+   },
+   "browser_specific_settings": {
+      "gecko": {
+         "id": "{5C46D283-ABDE-4dce-B83C-08881401921C}"
+      }
+   },
+   "commands": {
+      "_execute_browser_action": {
+         "description": "__MSG_cj_i18n_01675__"
+      }
+   },
+   "container": "GOOGLE_DRIVE",
+   "content_scripts": [ {
+      "css": [ "/styles/cs-tasks.css" ],
+      "include_globs": [ "https://tasks.google.com/*" ],
+      "js": [ "/scripts/cs-tasks.js" ],
+      "matches": [ "https://*.google.com/embed/*", "https://*.google.com/u/?/embed/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "default-src 'none'; child-src 'none'; manifest-src 'none'; frame-src 'none'; media-src 'none'; object-src 'none'; worker-src 'none'; connect-src https: chrome-extension: https://accounts.google.com/ https://ogs.google.com/ https://www.googleapis.com/appsmarket/v2/installedApps/; font-src 'self'; img-src https: http: https://t0.gstatic.com/ https://www.google.com/ data:; style-src 'self' 'unsafe-inline'; style-src-elem 'self' 'unsafe-inline'; style-src-attr 'self' 'unsafe-inline'; script-src 'self'; script-src-elem 'self'; script-src-attr 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'; report-uri https://api.jeurissen.co/reports/csp/webext/sfg-chrome/v26_6_1/",
+   "default_locale": "en",
+   "description": "__MSG_cj_i18n_01719__",
+   "developer": {
+      "name": "Carlos Jeurissen",
+      "url": "https://apps.jeurissen.co/"
+   },
+   "externally_connectable": {
+      "accepts_tls_channel_id": false,
+      "ids": [ "aiekbiaglgnfojebpkemjkgaofkhfodf", "jegfmclagmheobcjojbiohjekamkpbeb", "odhlcadbopildpgohnmnknegjdnnpehl", "ponjkmladgjfjgllmhnkhgbgocdigcjm" ]
+   },
+   "homepage_url": "https://apps.jeurissen.co/shortcuts-for-google",
+   "icons": {
+      "128": "/images/extension/default/icon-128.png",
+      "16": "/images/extension/default/icon-16.png",
+      "32": "/images/extension/default/icon-32.png",
+      "48": "/images/extension/default/icon-48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCirIGGJhMj+r8G1hrgpzzKeyUHm4HIvcmyIhFi+JQXKb4b6NsG6T/fyj5upW2WpSA5LrVFM2Gv1c8MthH9bXtPezCAM87FVQx+r567ah8zq/V+qu0JDnHBDGjCX0o2bjl+CFwpXMCaVP1Q1+4aeiLID4IDKmRq/68tJichiS/ZgQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "21",
+   "minimum_opera_version": "15",
+   "name": "Shortcuts for Google™",
+   "offline_enabled": true,
+   "optional_permissions": [ "http://*/**", "https://*/**" ],
+   "options_page": "/views/options.html",
+   "options_ui": {
+      "browser_style": false,
+      "open_in_tab": true,
+      "page": "/views/options.html"
+   },
+   "permissions": [ "storage", "tabs", "https://*.google.com/*", "https://*.googleapis.com/*", "https://*.googleusercontent.com/*", "https://*.gstatic.com/*", "https://*.youtube.com/*" ],
+   "short_name": "Shortcuts for Google",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "26.6.1"
+}

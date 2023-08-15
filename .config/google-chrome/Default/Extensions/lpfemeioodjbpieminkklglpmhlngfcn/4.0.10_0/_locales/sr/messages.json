@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Proširite svoje upute za ChatGPT s relevantnim rezultatima pretrage na vebu putem pretraživanja vebom."
+   },
+   "name": {
+      "message": "WebChatGPT: ЧатГПТ са приступом интернету"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Uključi/isključi pristup vebu"
+   }
+}

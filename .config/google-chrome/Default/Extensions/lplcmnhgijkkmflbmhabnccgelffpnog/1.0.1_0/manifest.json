@@ -1,0 +1,110 @@
+{
+   "author": "Joe Pestro",
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "keyboard128.png",
+      "default_title": "Keyboard Shortcuts"
+   },
+   "commands": {
+      "01-tab-previous": {
+         "description": "Select previous tab",
+         "suggested_key": {
+            "default": "Ctrl+Left"
+         }
+      },
+      "02-tab-next": {
+         "description": "Select next tab",
+         "suggested_key": {
+            "default": "Ctrl+Right"
+         }
+      },
+      "03-tab-move-to-previous": {
+         "description": "Move current tab left",
+         "suggested_key": {
+            "default": "Ctrl+Comma"
+         }
+      },
+      "04-tab-move-to-next": {
+         "description": "Move current tab right",
+         "suggested_key": {
+            "default": "Ctrl+Period"
+         }
+      },
+      "open-bookmarks": {
+         "description": "Open Chrome Bookmarks (chrome://bookmarks)"
+      },
+      "open-downloads": {
+         "description": "Open Chrome Downloads (chrome://downloads)"
+      },
+      "open-extensions": {
+         "description": "Open Extensions (chrome://extensions)"
+      },
+      "open-extensions-shortcuts": {
+         "description": "Open Extension Shortcuts (chrome://extensions/shortcuts)"
+      },
+      "open-flags": {
+         "description": "Open Chrome Flags (chrome://flags)"
+      },
+      "open-help": {
+         "description": "Open Chrome Help (chrome://help)"
+      },
+      "open-history": {
+         "description": "Open Chrome History (chrome://history)"
+      },
+      "open-settings": {
+         "description": "Open Chrome Settings (chrome://settings)"
+      },
+      "tab-close": {
+         "description": "Close current tab"
+      },
+      "tab-create-new": {
+         "description": "New tab"
+      },
+      "tab-discard": {
+         "description": "Unload tab from memory"
+      },
+      "tab-duplicate": {
+         "description": "Duplicate current tab"
+      },
+      "tab-go-back": {
+         "description": "Go back to the previous page"
+      },
+      "tab-go-forward": {
+         "description": "Go forward to the next page"
+      },
+      "tab-move-to-first": {
+         "description": "Move current tab to first"
+      },
+      "tab-move-to-last": {
+         "description": "Move current tab to last"
+      },
+      "tab-mute": {
+         "description": "Mute / Unmute current tab"
+      },
+      "tab-pin": {
+         "description": "Pin / Unpin current tab"
+      },
+      "tab-reload": {
+         "description": "Reload tab"
+      },
+      "window-new": {
+         "description": "New window"
+      },
+      "window-new-incognito": {
+         "description": "New incognito window"
+      }
+   },
+   "description": "Set custom keyboard shortcuts for Chrome (browse to chrome://extensions/shortcuts).",
+   "icons": {
+      "128": "keyboard128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAidK9DpBQwretNd6Yl+D5arEuDIY8NsT7ehGmqzi7ooh7vYnZ8AlW5jAatbfNwWtl3rE0sU3oLjE9fLug7yqXsagTrwLmqqarMg79Msrmk0ZrAZIJp3sVINKO1IsUDHOVC0F/UDvaeMplO5lG6K6AWHD/hNuI2qKXq/zIhutit/qtEOdfQ/bU9KlSl4Z3YMDTnWEW6OuQrc7zEnYEabv+UCf7O7lqScjAEudeiJvBxOkTLA7IvOOcoJGkWy1EvnM6jhZQWjJMkvGjcENJ0FxHjnEW5OGHoNlXj5cd5MUI9GHHwIFaN9XA5NQKM8B2fi9IZ9z3TXNU9Ew9qedUdNwgYQIDAQAB",
+   "manifest_version": 2,
+   "name": "Keyboard Shortcuts",
+   "short_name": "Keyboard Shortcuts",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1"
+}

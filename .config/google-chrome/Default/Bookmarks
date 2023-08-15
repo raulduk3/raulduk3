@@ -1,0 +1,81 @@
+{
+   "checksum": "892852f530b7631ba606c2dd23d7ab28",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13317972212692392",
+            "date_last_used": "13329466840682965",
+            "guid": "58267cbc-503b-4ddc-b7c9-02630ac1e411",
+            "id": "5",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Richard Álvarez | Filmmaker",
+            "type": "url",
+            "url": "https://www.raulduke.com/"
+         }, {
+            "date_added": "13332224588221983",
+            "date_last_used": "0",
+            "guid": "f6fd288a-99fe-4ab3-bfc6-d0244876ed8a",
+            "id": "6",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "(1) The Robert Rodriguez: 10 Minute Film School (The 1st & Original) - YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/watch?v=W-YpfievjSk"
+         }, {
+            "date_added": "13335399765194117",
+            "date_last_used": "0",
+            "guid": "75f52341-8d93-41f4-bee3-edc981d57ec4",
+            "id": "7",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "staffmeup.com/jobs",
+            "type": "url",
+            "url": "https://staffmeup.com/jobs"
+         }, {
+            "date_added": "13336290216347517",
+            "date_last_used": "0",
+            "guid": "08904462-9a84-4201-ac95-bd307226c5aa",
+            "id": "8",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Essanay Studio and Lighting Company, Inc - Chicago Illinois",
+            "type": "url",
+            "url": "https://www.essanay.com/"
+         } ],
+         "date_added": "13336544931052702",
+         "date_last_used": "0",
+         "date_modified": "13336290216347517",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13336544931052704",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13336544931052705",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "Cu0BCswBCIiBAhLFARI8CAISOAoGCgJibRABEDMaEgkA7uOj+QIGACEA7uOj+QIGADIYChYIAhEs9JGz+QIGABgAIQAAAAAAAAAAIACSAX0KNAoOY2hyb21lX3N5bmNfYm0SBTUxIWJtGhIJrwmSs/kCBgARrwmSs/kCBgAptu+Ss/kCBgAKRQoWYW5ub3RhdGlvbl9jaHJvbWVfc3luYxIFNTEhYmQaEgkAg56u+QIGABEAg56u+QIGACkNB5Kz+QIGADCAhvr0mt+AA7oBAggBEgAqGDVnOTdNNjhud21Db2k1VEp5UEtrbkE9PUgDEsMBCAMSvgEKHG5qZ0R1ODhlQ3J2WHA4NnBEN2ZIR2NxRnA4OD0SZlo6QURxdEFadytjOU0wS2YxMklkUEFleWw3dVp3ZDE1WmljeEhUb2JkMGJUWmlGVmN6ZFhTN091b3g1dHJnRU0zRlVTbDRxK2pSb2dNaWJMdy80ekZIWHNjWE1WTThDbWZJU0E9PRgAIAAoADDs3tqFld+AAzgAQABKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAEuwBCAYS5wEKHDkvcUxicVltdUk5cmpUbHdLQ3EzQkVoRXRuRT0SZlo6QURxdEFaeEY3am9BV3RQcEt4MTRJSTFCUzdlbStTZTVBaUppUVVjQWYxa052UGo5VGJCNTZzRnFEVjh3bFRZdkcxckl6VEQ2N2c5V3dXcnhsaWJQTU5qSUluWGZnei9tOUE9PRgAIAIoAjDa2buLld+AAzi/o7GujzFA4f3F0Z8xShxYVXpOaW1SeHB3ODhOU3BHQVh6WGpxYkZ5bGs9Wh8iHbphbzZQUlF3T1pvTTRqN0JMR0xGeUZWVVRIQlk9ZTj5OTMSqwEIARKmAQoceXhKLzZmdmtlY3I3a3A1RVF6QjR0V0xwZGJFPRJOWjpBRHF0QVp4eFVJWTkxN3RxOExqVEtPZGVnK2UvQjgxdHJhbnM3QllFRHdtVEFiOWNiZzBGVU9YZEhGSGpublVmcEJoZENnV2JpUzA0GAAgACgAMOze2oWV34ADOABAAEocYVJDV0xnaEY5YjVJbnFLSUR2dUovanZRa0ZjPVoAZQAAAAAS7AEIBxLnAQocVW91V2VTTExTUFk0bXY2MnhPM0NSazR0QTJvPRJmWjpBRHF0QVp4Rjdqb0FXdFBwS3gxNElJMUJTN2VtOSttd3JXRWYvNExoK2VrOFFaZEQ5azV3QUFabFd5b1lJcjRpV0wrdEMvVjl4SW9lOTBpZmdOcFBpaHJxdkc0ZCtWWGM3Zz09GAAgAigCMNrZu4uV34ADOMvZtpibMUDi/cXRnzFKHGd1eFJoQ1pqYXJjNDVqNFk3b1lTdnhUdmd5bz1aHyId3UpkanBVNHF0VFNqUmsrWkM3bisycGZHZUNPMD1llovr6xLDAQgCEr4BChxZY1NUb252RVNQd3FDczRMMmNyVmh2NjhMOTg9EmZaOkFEcXRBWnpUVUJPTW1QN1Z1MzdZQnRwcnRyYkI4bTY2M1BqSW4zMUw0SXBHWkdFeTN1UkcxVXQ0KzU4TEhBQUhpSlpFSVo4M0N0NnhCbTFQU3lUL2JmTk1xcXIwajlKem93PT0YACAAKAAw7N7ahZXfgAM4AEAAShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAABLrAQgFEuYBChxCYkkveDYrT05yTXdpVGpjUFpXb2NIaFkrZnM9EmZaOkFEcXRBWnhGN2pvQVd0UHBLeDE0SUkxQlM3ZW1TUzlTaVRnblVkM0dYdXFHUEJKTFowUnUwUHBOanBwZUZLRUxSNUI3blplRVpNOS9MZWhrU1VkQTQ4NmR2d0FzUFZjYXl3PT0YACAAKAAwr9WdoO6x/wI41aepotowQNWnqaLaMEocQjRqazlFNVlNV0RQenBWcXFnNWVSRkhZNTRBPVoeIhxjRUVCUjNFaVZVUFpmMWtZZlY5SEJjS2M3UzQ9ZcxGnvIS7AEICBLnAQocTGVhdGxqVlNtUC85YzVxQUVXeGRQakJPQjQwPRJmWjpBRHF0QVp4Rjdqb0FXdFBwS3gxNElJMUJTN2VtTjR2YmVlY25NS3MzTXNSazRsT0hDSzVqTmtaK1U5aDJnNnBXUTV5UFJjOW9wSWh5VXF1ZFJCQ3FrTmFuUUhUOG4zekZVQT09GAAgAigCMNrZu4uV34ADOJzDg8GeMUDi/cXRnzFKHDQ5ZHBPcng2NmhjdkhUNk5FeEQ5NHhPLzNoVT1aHyId7k1Pa3FldGJGRWRkeTh6bG83U3lSU0tLYkJQRT1lwNaFbjABOAA=",
+   "version": 1
+}

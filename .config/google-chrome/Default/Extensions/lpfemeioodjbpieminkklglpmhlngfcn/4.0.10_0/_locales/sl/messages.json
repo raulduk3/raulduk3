@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Izboljšajte svoje ChatGPT napotke z relevantnimi rezultati spletnega iskanja prek brskanja po spletu."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT z dostopom do interneta"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Preklopi dostop do spleta"
+   }
+}

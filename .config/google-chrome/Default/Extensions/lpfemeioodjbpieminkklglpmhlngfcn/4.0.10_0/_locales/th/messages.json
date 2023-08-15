@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "เพิ่มคำถามของคุณใน ChatGPT ด้วยผลการค้นหาเว็บที่เกี่ยวข้องผ่านการท่องเว็บ"
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT พร้อมการเข้าถึงอินเทอร์เน็ต"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "เปิด/ปิดการเข้าถึงเว็บ"
+   }
+}

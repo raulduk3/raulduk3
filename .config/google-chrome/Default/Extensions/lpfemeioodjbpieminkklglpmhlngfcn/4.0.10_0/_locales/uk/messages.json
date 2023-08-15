@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Розширюйте ваші вказівки ChatGPT із відповідними результатами веб-пошуку за допомогою веб-перегляду."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT з доступом до інтернету"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "ویب اکسیس ٹوگل کریں"
+   }
+}

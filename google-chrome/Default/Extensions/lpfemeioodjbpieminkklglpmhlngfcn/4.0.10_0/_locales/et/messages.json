@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Täiendage oma ChatGPT ajendeid asjakohaste veebiotsingute tulemustega veebilehitseja kaudu."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT internetiühendusega"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Lülita veebipääs sisse/välja"
+   }
+}

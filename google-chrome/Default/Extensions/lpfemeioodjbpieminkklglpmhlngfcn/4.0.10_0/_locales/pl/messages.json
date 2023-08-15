@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Rozszerz swoje sugestie ChatGPT o odpowiednie wyniki wyszukiwania w sieci za pomocą przeglądania stron internetowych."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT z dostępem do Internetu"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Przełącz dostęp do sieci"
+   }
+}

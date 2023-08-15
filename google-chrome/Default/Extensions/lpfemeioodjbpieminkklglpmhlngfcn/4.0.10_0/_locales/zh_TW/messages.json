@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "透過網頁瀏覽增強您的 ChatGPT 提示，使其包含相關的網頁搜尋結果。"
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT 具備互聯網訪問功能"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "切換網路存取"
+   }
+}

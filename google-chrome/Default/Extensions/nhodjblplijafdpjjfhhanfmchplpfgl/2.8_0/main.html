@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Xdebug</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/global.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/history.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/alert.js"></script>
+	<script type="text/javascript" src="js/breakpoints.js"></script>
+	<script type="text/javascript" src="js/socket.js"></script>
+	<script type="text/javascript" src="js/changelog.js"></script>
+	<script type="text/javascript" src="js/watches.js"></script>
+	<script type="text/javascript" src="js/action.js"></script>
+	<script type="text/javascript" src="js/frontend.js"></script>
+	<script type="text/javascript" src="js/keyboard.js"></script>
+</head>
+
+<body>
+
+	<nav>
+
+		<span id="processing-indicator">
+			<img src="img/processing_busy.svg" class="busy" />
+			<img src="img/processing_waiting.svg" class="waiting" />
+		</span>
+
+		<span id="scroll-to-active-line" data-action="scroll_to_active_line" class="nav-button">
+			<img src="img/scroll_to_active_line.svg" />
+		</span>
+
+		<span id="stepout" data-action="step_out" class="nav-button">Step Out</span> |
+		<span id="break-on-return" data-action="step_out_func" class="nav-button">Step Out (func)</span> |
+		<span id="stepover" data-action="step_over" class="nav-button">Step Over</span> |
+		<span id="stepinto" data-action="step_into" class="nav-button">Step Into</span> |
+		<span id="run" data-action="run" class="nav-button">Run</span> |
+		<span id="stop" data-action="stop" class="nav-button">Stop</span> |
+		<span id="listen" data-action="listen" class="nav-button"></span>
+
+		<span id="settings-popup-button" class="nav-button-right">Settings/Help</span>
+		<input type="text" id="find-in-source" class="nav-button-right" placeholder="search" />
+		<span id="changelog-button" class="nav-button-right"></span>
+
+		<form id="settings" class="accordion">
+			<div class="tab-link">
+				<strong>Settings</strong>
+			</div>
+
+			<div class="tab-content">
+				<label>Listening IP:</label>
+				<input type="text" name="listening_ip" style="width: 8em" />
+				(xdebug will try to establish connection with this IP)
+
+				<br />
+				<br />
+
+				<label>Listening Port:</label>
+				<input type="text" name="listening_port" style="width: 4em" />
+				(this should match <strong>xdebug.remote_port</strong> in your <strong>php.ini</strong>)
+
+				<br />
+				<br />
+
+				Number of source code lines that will be fetched - before and after current line.
+				<br />
+				Used only if no 'Source URL' was specified.
+				<br />
+				<label>Number of lines:</label>
+				<input type="text" name="lines_count" style="width: 3em" />
+
+				<br />
+				<br />
+
+				If the native xdebug source doesn't work as expected you can try using your own api, e.g.
+				<a href="https://github.com/artbek/chrome-xdebug-client/blob/master/php/source.php" target="_blank">source.php</a>
+				<br />
+				The app will query the following url. It will be an AJAX call (e.g. http://localhost/source.php?path=&lt;filepath&gt;).
+				<br />
+				<label>Source URL:</label>
+				<input type="text" name="source_script" style="width: 18em" placeholder="http://localhost/source.php" />
+
+				<br />
+				<br />
+
+				<label for="keep_listening">Keep Listening:</label>
+				<input type="checkbox" name="keep_listening" id="keep_listening" value="1" />
+
+				<br />
+				<br />
+
+				<label for="break_at_first_line">Break at first line:</label>
+				<input type="checkbox" name="break_at_first_line" id="break_at_first_line" value="1" />
+
+				<br />
+				<br />
+
+				<label for="highlight_syntax">Highlight syntax:</label>
+				<input type="checkbox" name="highlight_syntax" id="highlight_syntax" value="1" />
+
+				<br />
+				<br />
+
+				<label for="remember_breakpoints">Remember breakpoints:</label>
+				<input type="checkbox" name="remember_breakpoints" id="remember_breakpoints" value="1" />
+
+				<br />
+
+			</div>
+
+
+			<div class="tab-link">
+				<strong>Shortcuts</strong>
+			</div>
+
+			<div class="tab-content">
+				<label for="shortcuts_disable">Disable all shortcuts:</label>
+				<input type="checkbox" name="shortcuts_disable" id="shortcuts_disable" value="1" />
+
+				<br />
+				<br />
+
+				<input type="hidden" name="shortcuts" />
+				<table id="settings-shortcuts"></table>
+			</div>
+
+
+			<div class="tab-link">
+				<strong>How to get started</strong>
+			</div>
+
+			<div class="tab-content">
+				1. Make sure the settings don't conflict with your setup.
+				<br />
+				2. Press <strong>Listen</strong>.
+				<br />
+				3. Run your code, e.g.:
+				<code>
+					http://artbek.co.uk?<strong>XDEBUG_SESSION_START=xxx</strong>
+					<br />
+					(should work without <strong>xxx</strong> value, but use it if you want <strong>XDEBUG_SESSION</strong> cookie to be created)
+				</code>
+
+				<code>
+					> export <strong>XDEBUG_CONFIG="remote_host=0.0.0.0"</strong> (<strong>remote_host=0.0.0.0</strong> is optional)
+					<br />
+					> php myscript_1.php
+					<br />
+					> php myscript_2.php
+				</code>
+
+				<code>
+					> <strong>XDEBUG_CONFIG=""</strong> php myscript.php
+				</code>
+			</div>
+
+
+			<div class="tab-link">
+				<strong>Troubleshooting</strong>
+			</div>
+
+			<div class="tab-content">
+				1. Make sure the <strong>Settings > Listening Port</strong> matches <strong>xdebug.remote_port</strong>.
+				To check your PHP configuration try:
+				<code class="inline">phpinfo()</code> or <code class="inline">php -i</code>
+				<br />
+				<br />
+				2. Make sure your <strong>FIREWALL</strong> isn't blocking incoming traffic - this is very common on Windows machines.
+				<br />
+				<br />
+				3. You may need to increase <strong>xdebug.max_nesting_level</strong> if you're expericing "Maximum function nesting level" errors.
+			</div>
+
+
+			<br />
+			<button id="settings-save">Save Settings</button>
+			<br />
+			<br />
+
+			<a href="https://github.com/artbek/chrome-xdebug-client" target="_blank">GitHub</a>
+			<br />
+		</form>
+
+	</nav>
+
+	<div id="codeview" contenteditable="true"></div>
+	<div class="load-more-before load-more-lines" style="display: none" contenteditable="false">Load more lines...</div>
+	<div class="load-more-after load-more-lines" style="display: none" contenteditable="false">Load more lines...</div>
+
+	<div id="stack" class="slidepopup-left" contenteditable="true">
+		<div id="stack-filenames">
+			<div class="filename">aaa</div>
+			<div class="filename">bbb</div>
+			<div class="filename">ccc</div>
+		</div>
+	</div>
+
+	<div id="eval" class="slidepopup-right">
+		<form id="eval-form">
+			<input type="radio" name="eval-expression-wrap" id="eval-wrap-var_export" value="var_export" checked="checked" style="margin-left: 0.3em" />
+			<label for="eval-wrap-var_export">var_export</label>
+
+			<input type="radio" name="eval-expression-wrap" id="eval-wrap-print_r" value="print_r" />
+			<label for="eval-wrap-print_r">print_r</label>
+
+			<input type="radio" name="eval-expression-wrap" id="eval-wrap-as_is" value="" />
+			<label for="eval-wrap-as_is">as is</label>
+
+			<input type="text" name="eval-expression" class="focus-on-visible" />
+
+			<input type="submit" id="eval-submit" value="Submit" style="display: none" />
+		</form>
+		<pre id="eval-content" contenteditable="true"></pre>
+	</div>
+
+	<div id="watches" class="slidepopup-right" data-offset="200">
+		<tabs class="stop-propagation">
+			<span id="tab-watches" class="tab active">Watches</span>
+			<span id="tab-breakpoints" class="tab">Breakpoints</span>
+		</tabs>
+
+		<div class="stop-propagation tab-content" id="tab-breakpoints-content">
+			<button id="breakpoints-remove-all">Delete all breakpoints</button>
+			<table>
+				<thead>
+					<tr>
+						<th>Line</th>
+						<th>File</th>
+						<th>Hit</th>
+						<th>Condition</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td colspan="5">No breakpoints set.</td></tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="stop-propagation tab-content active" id="tab-watches-content">
+			<form class="watches-line" data-id="0">
+				<input type="text" name="input" class="blurred" placeholder="<expression to watch>" />
+				<pre contenteditable="true" class="output"></pre>
+				<input type="submit" style="display: none" />
+			</form>
+			<form class="watches-line" data-id="1">
+				<input type="text" name="input" class="blurred" placeholder="<expression to watch>" />
+				<pre contenteditable="true" class="output"></pre>
+				<input type="submit" style="display: none" />
+			</form>
+		</div>
+	</div>
+
+	<div id="alert" class="popup">
+		<div class="close-button">x</div>
+		<span class="alert-message"></span>
+	</div>
+
+	<div id="changelog" class="user-closable">
+		<div class="close-button">x</div>
+		<div id="changelog-content"></div>
+	</div>
+
+	<div id="breakpointOptions" class="popup user-closable">
+		<div class="close-button">x</div>
+		<form id="breakpoint-options-form" class="stop-propagation">
+
+			<label for="breakpoint-condition" class="alert-message">
+				<span class="breakpoint-id"></span>
+				<br />
+				Break on HIT COUNT:
+			</label>
+			<br />
+			<input type="radio" value=">=" name="bp-hit-operator" id="bp-hit-operator-1" />
+			<label for="bp-hit-operator-1" class="bp-hit-operator">&gt;=</label>
+			<input type="radio" value="==" name="bp-hit-operator" id="bp-hit-operator-2" />
+			<label for="bp-hit-operator-2" class="bp-hit-operator">==</label>
+			<input type="radio" value="%" name="bp-hit-operator" id="bp-hit-operator-3" />
+			<label for="bp-hit-operator-3" class="bp-hit-operator" title="multiple of">multiple of</label>
+			<input
+				type="number"
+				min="1"
+				name="breakpoint-hit-count"
+				id="breakpoint-hit-count"
+				class="stop-propagation"
+				style="width: 20%"
+			/>
+			<br />
+
+			<label for="breakpoint-condition" class="alert-message">
+				Break on EXPRESSION:
+			</label>
+			<br />
+			<input
+				type="text"
+				name="breakpoint-condition"
+				id="breakpoint-condition"
+				class="stop-propagation input-wide"
+			/>
+			<br />
+			<button id="breakpointSaveCondition" data-id="" class="stop-propagation">
+				Save
+			</button>
+		</form>
+		<button id="breakpointRemove" data-id="" class="stop-propagation">Remove Breakpoint</button>
+	</div>
+
+	<button id="tooltip">???</button>
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Rozširte svoje pokyny ChatGPT o relevantné výsledky vyhľadávania na webe prostredníctvom webového prehliadania."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT s prístupom na internet"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Prepnúť prístup na web"
+   }
+}

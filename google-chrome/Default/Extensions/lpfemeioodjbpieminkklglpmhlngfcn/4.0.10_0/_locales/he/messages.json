@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "הרחב את ההזמנות שלך של ChatGPT עם תוצאות חיפוש רלוונטיות דרך גלישה ברשת."
+   },
+   "name": {
+      "message": "WebChatGPT: צ'אטגפט עם גישה לאינטרנט"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "החלף גישה לרשת"
+   }
+}

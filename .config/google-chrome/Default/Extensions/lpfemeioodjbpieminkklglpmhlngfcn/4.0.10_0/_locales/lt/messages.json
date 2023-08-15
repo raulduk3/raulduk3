@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Išplėskite ChatGPT raginimus su tinkamais internetinio paieškos rezultatais per naršymą internete."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT su interneto prieiga"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Perjungti interneto prieigą"
+   }
+}

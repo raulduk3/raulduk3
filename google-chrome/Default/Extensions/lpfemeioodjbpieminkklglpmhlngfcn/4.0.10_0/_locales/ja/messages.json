@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Webブラウジングを介して関連するウェブ検索結果でChatGPTのプロンプトを強化します。"
+   },
+   "name": {
+      "message": "WebChatGPT: インターネットアクセスを備えたChatGPT"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "ウェブアクセスの切り替え"
+   }
+}

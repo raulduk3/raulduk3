@@ -1,0 +1,14 @@
+{
+   "desc": {
+      "message": "Förbättra dina ChatGPT-prompter med relevanta webbsökresultat via webbläsning."
+   },
+   "name": {
+      "message": "WebChatGPT: ChatGPT med internetåtkomst"
+   },
+   "sn": {
+      "message": "WebChatGPT"
+   },
+   "toggleWebAccess": {
+      "message": "Växla webbåtkomst"
+   }
+}
