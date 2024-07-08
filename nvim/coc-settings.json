@@ -1,0 +1,4 @@
+{
+	"rust-analyzer.hover.documentation.enable": true,
+	"suggest.noselect": false
+}
