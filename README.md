@@ -1,5 +1,4 @@
 <div align="center">
-  <h3>Ricky Álvarez</h3>
 
   <img src="https://media.giphy.com/media/10RVT8mge0xQwU/giphy.gif"></img>
     <br />
