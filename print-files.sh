@@ -1,53 +1,75 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-# Define the directory to search in. If not supplied, use the current directory.
-SEARCH_DIR="${1:-.}"
-shift 1 # Shift the arguments to leave out the first one (SEARCH_DIR)
+# --- Args ---
+if [[ $# -gt 0 ]]; then
+  SEARCH_DIR="$1"
+  shift
+else
+  SEARCH_DIR="."
+fi
 
-# Initialize an array to hold ignore conditions for 'find'
-declare -a ignore_conditions=()
-
-# Add default ignore conditions
-ignore_conditions+=('! -path */git*')
-ignore_conditions+=('! -path */node_modules*')
-ignore_conditions+=('! -name package-lock.json')
-ignore_conditions+=('! -path */DS_Store*')
-
-# Initialize output file variable. Default is stdout.
+# Output file: any arg starting with '-' means "write to this path" (same as your original).
 OUTPUT_FILE="/dev/stdout"
 
-# Define an array of code file extensions
-declare -a code_extensions=(".c" ".cpp" ".py" ".java" ".js" ".sh" ".tsx" ".json" ".ts" ".html" ".css" ".sql" ".rb" ".php" ".mdx")
-
-# Loop through the remaining arguments to add custom ignore conditions or set the output file
-for arg; do
-    if [[ "$arg" == -* ]]; then
-        OUTPUT_FILE="${arg:1}"
-    else
-        ignore_conditions+=("! -path */$arg*")
-    fi
+# Collect extra ignore dir globs (tokens that do NOT start with '-')
+declare -a EXTRA_IGNORES=() || EXTRA_IGNORES=()
+for arg in "$@"; do
+  if [[ "$arg" == -* ]]; then
+    OUTPUT_FILE="${arg:1}"
+  else
+    EXTRA_IGNORES+=("$arg")
+  fi
 done
 
-# Construct the find command with dynamically built ignore conditions
-find_command="find $SEARCH_DIR -type f"
-for condition in "${ignore_conditions[@]}"; do
-    find_command+=" $condition"
+# --- Extensions (use case pattern matching later) ---
+# Adjust as needed; added .md and .jsx which are common.
+CODE_EXTS='
+*.c|*.cpp|*.py|*.java|*.js|*.jsx|*.sh|*.tsx|*.json|*.ts|*.html|*.css|*.sql|*.rb|*.php|*.md|*.mdx
+'
+w
+# --- Build find command as array (NO eval) ---
+cmd=(find "$SEARCH_DIR" -type f)
+
+# Default ignores (quote patterns so the shell doesn't expand them)
+cmd+=( ! -path '*/git*' )
+cmd+=( ! -path '*/node_modules*' )
+cmd+=( ! -name 'package-lock.json' )
+cmd+=( ! -path '*/.DS_Store*' )
+
+# User-provided ignores (treat as directory prefixes; ignore anything under them)
+# Example: "build" -> ignore '*/build/*' and also '*/build*' for loose matches
+for ig in "${EXTRA_IGNORES[@]}"; do
+  cmd+=( ! -path "*/$ig/*" )
+  cmd+=( ! -path "*/$ig*" )
 done
 
-# Execute the constructed find command and redirect output to file or stdout
-eval "$find_command" | while IFS= read -r file; do
-    # Extract the file extension
-    file_extension="${file##*.}"
-    # Check if the file extension is in the list of code file extensions
-    if [[ " ${code_extensions[*]} " =~ " .$file_extension " ]]; then
-        echo "=== Content of: $file ===" >> "$OUTPUT_FILE"
-        cat "$file" >> "$OUTPUT_FILE"
-        echo "" >> "$OUTPUT_FILE"
-        echo "=========================" >> "$OUTPUT_FILE"
-        echo "" >> "$OUTPUT_FILE"
-    fi
+# NUL-safe walk
+cmd+=( -print0 )
+
+# --- Run & emit ---
+# Create/clear output if it's a real file
+if [[ "$OUTPUT_FILE" != "/dev/stdout" ]]; then
+  : > "$OUTPUT_FILE"
+fi
+
+# Stream results
+"${cmd[@]}" | while IFS= read -r -d '' file; do
+  case "$file" in
+    # Match against our code extensions set
+    *.c|*.cpp|*.py|*.java|*.js|*.jsx|*.sh|*.tsx|*.json|*.ts|*.html|*.css|*.sql|*.rb|*.php|*.md|*.mdx)
+      {
+        printf '=== Content of: %s ===\n' "$file"
+        cat -- "$file"
+        printf '\n=========================\n\n'
+      } >> "$OUTPUT_FILE"
+      ;;
+    *) : ;;  # not a code file
+  esac
 done
 
-# Usage information
-echo "Usage: $0 [search-directory] [-outputFilePath] [ignore-dir1] [ignore-dir2] ..."
-echo "Example: $0 /usr/local/src -output.txt build tmp"ß
+# Optional usage helper (only if explicitly requested)
+if [[ "${SHOW_USAGE:-0}" == "1" ]]; then
+  echo "Usage: $0 [search-directory] [-outputFilePath] [ignore-dir1] [ignore-dir2] ..."
+  echo "Example: $0 /usr/local/src -output.txt build tmp"
+fi

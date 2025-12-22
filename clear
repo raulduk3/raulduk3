@@ -1,0 +1,410 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% Edits: Richard A. Alvarez
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome5}
+\usepackage{iftex}
+\usepackage{fontspec}
+\usepackage{xspace} 
+
+\setmainfont{Avenir}
+
+\frenchspacing 
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter} 
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+
+%-------------------------
+% Custom commands
+
+\newcommand{\xsmall}{\fontsize{8pt}{8pt}\selectfont}
+\newcommand{\normal}{\fontsize{16pt}{16pt}\selectfont}
+\newcommand{\titlef}{\fontsize{21pt}{21pt}\selectfont}
+
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+% Footer
+\fancypagestyle{firstpage}{
+  \fancyhf{} % clear all header and footer fields
+}
+
+\fancypagestyle{otherpages}{
+  \fancyhf{} % clear all header and footer fields
+  \fancyfoot[C]{\small Richard Álvarez}
+}
+
+\pagestyle{otherpages}
+\thispagestyle{firstpage}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeEducationHeading}[6]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+		\textit{\small#5} & \textit{\small #6} \\
+	\end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & #2 \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeOrganizationHeading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & {\small #2} \\
+		\textit{\small#3}
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSmallOrganizationHeading}[4]{
+	\small{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & {\small #2} \\
+		\textit{\small#3} & \textit{\small #4} 
+	\end{tabular*}\vspace{-7pt}
+	}
+}
+
+\newcommand{\resumeCert}[2]{
+	\small{
+	\vspace{-4pt}\item
+	\textbf{#1} {\textit{\small #2}}
+	}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeParagraph}[1]{
+	\item[]
+	\parbox{\linewidth}{
+		\small{#1\xspace} % Modify this line
+	}
+	\vspace{-7pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+	\textbf{\titlef \scshape Richard Álvarez} \\ \vspace{3pt}
+	\vspace{8pt}
+	\small
+	\hspace{.5pt} \href{mailto:rawalvarez731@gmail.com}{rawalvarez731@gmail.com} \hspace{.5pt}
+	$/$
+	 \hspace{.5pt} \href{https://github.com/raulduk3}{GitHub} \hspace{.5pt}
+	$/$
+	\hspace{.5pt} \href{https://raulduke.com}{raulduke.com} \hspace{.5pt}
+	$/$
+	\hspace{.5pt} \href{https://www.google.com/maps/place/Chicago,+IL/@41.833871,-87.8967704,11z/data=!3m1!4b1!4m6!3m5!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982!16zL20vMDFfZDQ?entry=ttu}{Chicago, Illinois}
+\end{center}
+
+%----------- ABOUT ME  -----------
+
+\vspace{-8pt}
+
+\section{About Me}
+\vspace{2pt}
+\resumeSubHeadingListStart
+
+\resumeParagraph{As a burgeoning computer engineer, I am passionate about pushing the boundaries of Machine Learning, Computer Vision, Robotics, GPU architecture, real-time rendering, and computational filmmaking. I focus on creating novel tools to enhance creative workflows, drawing on my experience with academic research, programming, and film/video production. I have created over 17 unique open-source projects and published two papers with over 400 cumulative downloads. I excel in producing professional video content, building software, and organizing group projects. I also enjoy reading, listening to music, visiting local theaters, and cycling.}
+
+\vspace{2pt}
+
+\resumeSubHeadingListEnd
+
+\vspace{-12pt}
+
+%----------- EDUCATION -----------
+
+\section{Education}
+\vspace{4pt}
+\resumeSubHeadingListStart
+
+\resumeEducationHeading
+{New York University (NYU) Tandon School of Engineering}{Brooklyn, New York}
+{Master of Science in Computer Engineering}{Aug 2025}{}
+{}{}
+\vspace{-8pt}
+
+\resumeEducationHeading
+{Kenyon College}{Gambier, Ohio}
+{Bachelor of Arts in Film; GPA: 3.4/4.0}{Aug 2020 – May 2024}
+{Minor in History and Concentration in Integrated Program in Humane Studies}{}
+\resumeParagraph{Authored two papers on machine learning applications in creative industries. Produced and edited over 15 experimental video projects, including music videos, audio-reactive visualizations, and short films.}
+
+\resumeParagraph{Relevant coursework includes AI for the Humanities (IPHS 300), Advanced Post-Production (FILM 391), Data Structures and Program Design (SCMP 218), Digital Photography (ARTS 321), Sex, Drugs, Guns: Research Strategies in the Contemporary Age (INDS 140), and Software Development (SCMP 318).}
+
+%----------- Archived  -----------
+
+\iffalse
+\resumeSubheading
+{Walter Payton College Preparatory 
+% \normalfont{(Admission rate: 0.85\%)}
+}{Chicago, Illinois}
+{High School Diploma}{Sep 2016 \textbf{--} Jun 2020}
+\fi
+
+\resumeSubHeadingListEnd
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+\vspace{4pt}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{IT Assistant}{Gambier, Ohio}
+{Library and Information Services (LBIS), Kenyon College · Part-time}{Sep 2023 – Feb 2024}
+\resumeParagraph{I supported campus-wide technology needs by preparing workstations, moving office tech, and securely erasing and recycling equipment. I restocked printers daily. I conducted classroom checks under the guidance of team members. I streamlined team projects by applying programming skills, in one instance by generating a spreadsheet of course meetings and classroom locations to determine when our techs could perform maintenance.}
+
+\vspace{2pt}
+
+\resumeSubheading
+{Assistant General Contractor}{Chicago, Illinois}
+{Sommerlad Construction · Part-time}{Jun 2023 – Aug 2023}
+\resumeParagraph{I participated in demolition projects for remodeling efforts, performed general land management tasks such as lawn mowing and simple assembly, and supported the team in meeting deadlines and adhering to safety standards.}
+
+\resumeSubheading
+{Video Editor}{Gambier, Ohio · Remote}
+{Kenyon College · Contract}{Apr 2022 – May 2022}
+\resumeParagraph{I condensed over 30 hours of interviews into a concise 10-minute recap for the John W. Adams Summer Scholars Program in Socio-Legal Studies. I crafted a polished visual presentation that adhered to Kenyon’s Visual Identity System. I highlighted key interview themes while ensuring balanced representation of all participants. I delivered the final product on schedule in an optimized format, maintaining professional collaboration with the employer throughout the project.}
+
+%———– Archived  ———–
+\iffalse
+
+\resumeSubheading
+{Fontanos Subs}{Chicago, Illinois}
+{Sub Artist · Part-time}{May 2021 – Aug 2021}
+\resumeParagraph{Worked behind the counter making sandwiches, maintaining cleanliness, and ensuring efficient service. Assisted with troubleshooting online orders, ensuring customer satisfaction and smooth operations.}
+
+\resumeSubheading
+{Private Stock Studios}{Chicago, Illinois}
+{Production Assistant}{Apr 2020 – Aug 2020}
+\resumeParagraph{Streamlined film and music production processes, orchestrated schedules with studio professionals, and meticulously documented production details.}
+
+\resumeSubheading
+{Intercultural Montessori}{Chicago, Illinois}
+{Teacher’s Aid}{Apr 2019 – Feb 2020}
+\resumeParagraph{Tutored students, facilitated programming learning, provided teacher support, and ensured effective communication and punctuality.}
+
+\fi
+
+\resumeSubHeadingListEnd
+
+ %———– PUBLICATIONS ———–
+\section{Publications}
+\vspace{2pt}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{A Retrieval-Augmented Film Recommendation System} $|$ \emph{\href{https://github.com/raulduk3/language-model-driven-film-recommendation}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/34/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2024}}{}
+\resumeParagraph{This project utilized LangChain’s OpenAI integration to dynamically generate queries based on user preferences, showcasing the potential of advanced AI and machine learning in digital entertainment. The Retrieval-Augmented Film Recommendation System was developed using Node.js and integrated with the OMDb and TMDb APIs to enhance movie metadata, delivering precise and personalized recommendations.}
+
+\resumeProjectHeading
+{\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2023}}{}
+\resumeParagraph{This research focused on analyzing short-format video editing trends by leveraging PySceneDetect and unsupervised deep neural networks. Advanced data visualization techniques, including t-SNE and PCA, were employed to uncover patterns and gain insights into the editing styles and trends prevalent in the dataset.}
+
+%———– Archived  ———–
+\iffalse
+
+\resumeProjectHeading
+{\textbf{AI-Driven Kubrick-Inspired Film Script Generation} $|$ \emph{\href{https://github.com/raulduk3/kubrick-gen}{\color{blue}GitHub}}}{}
+\resumeItemListStart
+\resumeItem{Created an AI pipeline for generating film scripts inspired by Stanley Kubrick’s style.}
+\resumeItem{Designed an API using Dust.tt for script generation with Large Language Models.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Unsupervised Deep Learning and PySceneDetect Analysis} $|$ \emph{\href{https://github.com/raulduk3/pySceneDetect-video-editing-trends}{\color{blue}GitHub}} $|$ \emph{\href{https://digital.kenyon.edu/dh_iphs_ss/22/}{\color{blue}Digital Kenyon}} $|$ \xsmall{May 2023}}{}
+\resumeItemListStart
+\resumeItem{Analyzed short-format video editing trends using PySceneDetect and DNNs.}
+\resumeItem{Employed t-SNE and PCA for data visualization and pattern discovery.}
+\resumeItemListEnd
+
+\fi
+
+\resumeSubHeadingListEnd
+
+%———– CERTIFICATES ———–
+\iffalse
+\section{Certificates}
+\vspace{6pt}
+\resumeSubHeadingListStart
+
+\resumeCert{CompTIA ITF+}{Sep 2024}
+
+\resumeCert{NYU Tandon Bridge}{Mar 2025}
+
+% \resumeCert{CompTIA A+}{Oct 2024}
+
+% \resumeCert{CompTIA Network+}{Nov 2024}
+
+% \resumeCert{CompTIA Security+}{Dec 2024}
+
+\resumeSubHeadingListEnd
+\fi
+
+% ———– AWARDS & ACHIEVEMENTS ———–
+\iffalse
+\section{Awards \& Achievements}
+\resumeSubHeadingListStart
+\vspace{2pt}
+
+\resumeSmallOrganizationHeading{Leadership Book Award}{Chicago, Illinois}{George Washington University}{Apr 2019}
+
+\vspace{2pt}
+
+\resumeSubHeadingListEnd
+\fi
+
+%———– SKILLS ———–
+\section{Skills}
+\resumeSubHeadingListStart
+\small{\item{
+\textbf{Programming}: Python, JavaScript/TypeScript, SQL, C/C++ \\ \vspace{2pt}
+
+\textbf{Frameworks}: Next.js, React, Tailwind CSS, Scikit-Learn, Keras, pandas, NumPy \\ \vspace{2pt}
+
+\textbf{Visualization}: Tableau, DaVinci Resolve, Adobe Creative Suite, Blender \\ \vspace{2pt}
+
+\textbf{Open-Source Research}: Maltego, Google Dorking, metadata analysis, reverse image search, social media monitoring \\ \vspace{2pt}
+
+\textbf{Machine Learning}: Generative AI, retrieval-augmented generation (RAG), fine-tuning LLMs  \\ \vspace{2pt}
+
+\textbf{Technical Workflows}: Agile, CI/CD, DevOps, OOP, functional programming \\ \vspace{2pt}
+}}
+
+\resumeSubHeadingListEnd
+
+%----------- REFERENCES -----------	
+\section{References}
+\vspace{2pt}
+\resumeSubHeadingListStart
+\vspace{2pt}
+
+\item{
+\textbf{Tina Vazquez} \\ 
+{ Fontano's Sub Sandwiches \\  
+(414) 232-1728 \\
+M - F: 9 AM to 3 PM CT 
+}
+}
+
+\item{
+\textbf{Steve Krajenski} \\ 
+{ LBIS Kenyon College \\  
+\href{mailto:krajenski1@kenyon.edu}{krajenski1@kenyon.edu}} \\
+(740) 504-0328 \\
+M - F: 1 PM to 3 PM ET 
+}
+
+\item{
+\textbf{Bernard Dickens III} \\ 
+{ Ergodark LLC \\ 
+\href{mailto:me@bernarddickens.com}{me@bernarddickens.com}} \\ 
+} 
+
+\item{
+\textbf{Audra Anderson} \\ 
+{ BDPA Mentor \\  
+\href{mailto:ajagwwtravels@gmail.com}{ajagwwtravels@gmail.com}} \\
+}
+
+\item{
+\textbf{Jon Chun} \\ 
+{ Visiting Instructor at Kenyon College \\  
+\href{mailto:chunj@kenyon.edu}{chunj@kenyon.edu}} \\
+}
+
+
+\resumeSubHeadingListEnd
+
+%————— END ————————––
+
+\end{document}
